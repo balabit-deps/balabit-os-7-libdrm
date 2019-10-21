@@ -1,14 +1,22 @@
-libdrm (2.4.97-1ubuntu1~18.04.1) bionic; urgency=medium
+libdrm (2.4.99-1ubuntu1~18.04.1) bionic; urgency=medium
 
-  * Backport to bionic for 18.04.3 HWE stack update. (LP: #1824111)
+  * Backport to bionic for 18.04.4 HWE stack update. (LP: #1848522)
 
- -- Timo Aaltonen <tjaalton@debian.org>  Wed, 10 Apr 2019 13:54:06 +0300
+ -- Timo Aaltonen <tjaalton@debian.org>  Mon, 21 Oct 2019 17:02:40 +0300
 
-libdrm (2.4.97-1ubuntu1) disco; urgency=medium
+libdrm (2.4.99-1ubuntu1) eoan; urgency=medium
 
-  * sync-i915-pciids.diff: Sync pci-ids with the kernel. (LP: #1821863)
+  * intel-sync-pciids.diff: Sync pci-ids with the kernel. (LP: #1845317)
 
- -- Timo Aaltonen <tjaalton@debian.org>  Fri, 29 Mar 2019 11:21:10 +0200
+ -- Timo Aaltonen <tjaalton@debian.org>  Wed, 25 Sep 2019 15:21:09 +0300
+
+libdrm (2.4.99-1) unstable; urgency=medium
+
+  * New upstream release. (Closes: #934494)
+  * 02_kfreebsd.diff: Dropped, upstream.
+  * symbols: Updated.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Mon, 12 Aug 2019 12:01:03 +0300
 
 libdrm (2.4.97-1) unstable; urgency=medium
 

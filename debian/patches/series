@@ -1,3 +1,2 @@
 01_default_perms.diff
-02_kfreebsd.diff
-sync-i915-pciids.diff
+intel-sync-pciids.diff
