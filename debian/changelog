@@ -1,3 +1,9 @@
+libdrm (2.4.99-1ubuntu1~18.04.2) bionic-security; urgency=medium
+
+  * No change rebuild for the -security pocket.
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Sat, 01 Feb 2020 11:31:30 -0500
+
 libdrm (2.4.99-1ubuntu1~18.04.1) bionic; urgency=medium
 
   * Backport to bionic for 18.04.4 HWE stack update. (LP: #1848522)
