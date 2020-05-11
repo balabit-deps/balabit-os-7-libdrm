@@ -1,7 +1,6 @@
 Source: libdrm
 Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-XSBC-Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Uploaders: Andreas Boll <aboll@debian.org>
 Build-Depends:
  debhelper (>= 11),
@@ -15,7 +14,7 @@ Build-Depends:
  libudev-dev [linux-any],
  libpciaccess-dev,
  valgrind [amd64 armhf i386 mips mipsel powerpc s390x],
-Standards-Version: 4.1.4
+Standards-Version: 4.5.0
 Section: libs
 Vcs-Git: https://salsa.debian.org/xorg-team/lib/libdrm
 Vcs-Browser: https://salsa.debian.org/xorg-team/lib/libdrm
@@ -77,6 +76,21 @@ Description: Userspace interface to kernel DRM services -- common files
  OpenGL drivers.
  .
  This package provides common files for libdrm.
+
+Package: libdrm-tests
+Depends:
+ libdrm2 (= ${binary:Version}),
+ ${shlibs:Depends},
+ ${misc:Depends}
+Architecture: any
+Description: Testing tools from the libdrm project
+ This library implements the userspace interface to the kernel DRM
+ services.  DRM stands for "Direct Rendering Manager", which is the
+ kernelspace portion of the "Direct Rendering Infrastructure" (DRI).
+ The DRI is currently used on Linux to provide hardware-accelerated
+ OpenGL drivers.
+ .
+ This package contains a variety of tools for testing from the libdrm project.
 
 Package: libdrm2-udeb
 Package-Type: udeb

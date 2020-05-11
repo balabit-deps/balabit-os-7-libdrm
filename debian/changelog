@@ -1,20 +1,61 @@
-libdrm (2.4.99-1ubuntu1~18.04.2) bionic-security; urgency=medium
+libdrm (2.4.101-2~18.04.1) bionic; urgency=medium
 
-  * No change rebuild for the -security pocket.
+  * Backport to bionic for 18.04.5 HWE stack update. (LP: #1876882)
+  * control: Relax debhelper requirement.
 
- -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Sat, 01 Feb 2020 11:31:30 -0500
+ -- Timo Aaltonen <tjaalton@debian.org>  Mon, 11 May 2020 15:47:23 +0300
 
-libdrm (2.4.99-1ubuntu1~18.04.1) bionic; urgency=medium
+libdrm (2.4.101-2) unstable; urgency=medium
 
-  * Backport to bionic for 18.04.4 HWE stack update. (LP: #1848522)
+  * fix-realpath-vs-firefox.diff: Fix webgl on intel with firefox.
+    (Closes: #956665) (LP: #1872586)
 
- -- Timo Aaltonen <tjaalton@debian.org>  Mon, 21 Oct 2019 17:02:40 +0300
+ -- Timo Aaltonen <tjaalton@debian.org>  Tue, 14 Apr 2020 16:32:57 +0300
 
-libdrm (2.4.99-1ubuntu1) eoan; urgency=medium
+libdrm (2.4.101-1) unstable; urgency=medium
 
-  * intel-sync-pciids.diff: Sync pci-ids with the kernel. (LP: #1845317)
+  * New upstream release.
+  * source, watch: Upstream provides only xz tarballs, bump source to
+    3.0 (quilt).
+  * Add my key to signing-key.asc.
+  * control: Use debhelper-compat, bump to 12.
+  * control: Bump policy to 4.5.0.
+  * local-options: Update extend-diff-ignore.
+  * symbols: Updated.
 
- -- Timo Aaltonen <tjaalton@debian.org>  Wed, 25 Sep 2019 15:21:09 +0300
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 03 Apr 2020 21:49:01 +0300
+
+libdrm (2.4.100-4) unstable; urgency=medium
+
+  * rules: Override dh_missing.
+  * rules: Include additional test binaries on arm. (Closes: #944752)
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Thu, 21 Nov 2019 14:47:00 +0200
+
+libdrm (2.4.100-3) unstable; urgency=medium
+
+  * Revert dropping libdrm-tests, since the package ended up in NEW
+    anyway.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Thu, 07 Nov 2019 09:19:11 +0200
+
+libdrm (2.4.100-2) unstable; urgency=medium
+
+  * control, rules: Disable libdrm-tests, 2.4.100 is needed for mesa 19.3
+    now and not after waiting for the NEW queue to clear.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Wed, 06 Nov 2019 20:04:53 +0200
+
+libdrm (2.4.100-1) experimental; urgency=medium
+
+  [ Timo Aaltonen ]
+  * New upstream release. (Closes: #943777)
+  * symbols: Updated.
+
+  [ Rohan Garg ]
+  * Add a libdrm-tests package. (Closes: #868898)
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Thu, 31 Oct 2019 23:27:08 +0200
 
 libdrm (2.4.99-1) unstable; urgency=medium
 

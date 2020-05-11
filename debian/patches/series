@@ -1,2 +1,2 @@
 01_default_perms.diff
-intel-sync-pciids.diff
+fix-realpath-vs-firefox.diff
